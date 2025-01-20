@@ -15,7 +15,7 @@ file(GLOB SOURCE
 )
 
 file(GLOB THIRD_PARTY
-        "Third_Party/**.c"
+        "Third_Party/GLAD/src/glad.c"
         "Third_Party/**.h"
 )
 

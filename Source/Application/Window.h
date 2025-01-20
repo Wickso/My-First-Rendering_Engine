@@ -10,16 +10,10 @@ public:
     static int Height;
     static int Width;
 
-
-    Window();
-    ~Window();
-
-    static void InitWindow(int height, int width, const char* title);
-
+    static void InitWindow(int width, int height, const char* title);
+    static void CloseGLFW();
 
 private:
-    static bool _init;
-
     static void ErrorCallback(int error, const char* message);
     static void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
     static void SizeCallback(GLFWwindow* window, int width, int height);
