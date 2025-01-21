@@ -7,11 +7,13 @@ int main() {
 
     Window::InitWindow(1080, 720, "First Rendering Engine");
 
+    std::cout << GL_MAX_VERTEX_ATTRIBS << std::endl;
+
+    // Temp main loop for testing window class
     while (!glfwWindowShouldClose(Window::window)) {
 
         glad_glClearColor(0.39f, 0.58f, 0.93f, 1.0f);
         glad_glClear(GL_COLOR_BUFFER_BIT);
-
 
         glfwSwapBuffers(Window::window);
         glfwPollEvents();
